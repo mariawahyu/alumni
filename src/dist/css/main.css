@@ -1,0 +1,336 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: #f6f8fd;
+    --secondary-color: #dc3545;
+    --color-text: #231942;
+    --navbar-color: #ffffff;
+    --navbar-color-text: #000000;  
+  }
+
+  /* NavBar Style */
+  .navbar{
+    position: fixed;
+    padding: 20px 0 20px 0;
+    width: 100%;
+    background-color: #023e8a;
+  }
+
+  .navbar .nav-link a{
+    color: var(--primary-color);
+    padding: 5px 10px 5px 10px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .navbar .brand{
+    color: var(--primary-color);
+  }
+
+  .navbar .nav-link a:hover{
+    color: gainsboro;
+  }
+
+  .navbar .nav-link .active{
+    background-color: var(--primary-color);
+    color: #023e8a;
+
+  }
+
+  .navbar .nav-link .active:hover{
+    color: #023e8a;
+  }
+
+  /* Header Style */
+  header{
+    background: #023e8a; /* fallback for old browsers */
+  }
+
+  .homepage .headerbox h2{
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+
+  .homepage .headerbox h2 span{
+    font-weight: 700;
+  }
+
+  .homepage .headerbox p{
+    line-height: 2;
+    color: var(--navbar-color);
+    font-weight: 500;
+  }
+
+  .homepage .headerbox img{
+    width: 100%;
+  }
+
+  @media screen  and (max-width:992px){
+    .homepage .headerbox{
+        padding-top: 8rem;
+    }
+    .homepage .headerbox img{
+        width: 400px;
+        display: block;
+        margin-inline: auto;
+      }
+  }
+
+  @media screen  and (max-width:575px){
+    .homepage .headerbox h2{
+        font-size: 3rem;
+    }
+  }
+
+  @media screen  and (max-width:475px){
+    .homepage .headerbox h2{
+        font-size: 2.4rem;
+    }
+    .homepage .headerbox p{
+        font-size: 14px;
+    }
+    .homepage .headerbox img{
+        font-size: 300px;
+    }
+  }
+
+  @media screen  and (max-width:475px){
+    .homepage .headerbox h2{
+        font-size: 2rem;
+    }
+    .homepage .headerbox p{
+        font-size: 12px;
+    }
+    .homepage .headerbox img{
+        font-size: 200px;
+    }
+  }
+
+  .homepage .statistik{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+  }
+  
+  .homepage .statistik .row:nth-child(1){
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .homepage .statistik .row:nth-child(1) h1, 
+  .homepage .statistik .row:nth-child(1) p
+  {
+    color: var(--color-text);
+  }
+
+  .homepage .statistik .row:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 15px;
+    padding-inline: 10px;
+ }
+ 
+ .homepage .statistik .row:nth-child(2) .col{
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+.homepage .informasi .row:nth-child(2) img{
+  width: 100%;
+  height: 300px;
+}
+
+  .homepage .informasi{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+  }
+  
+  .homepage .informasi .row:nth-child(1){
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .homepage .informasi .row:nth-child(1) h1, 
+  .homepage .informasi .row:nth-child(1) p
+  {
+    color: var(--color-text);
+  }
+
+  .homepage .informasi .icon{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    color: gray;
+    column-gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  
+  .homepage .informasi .row:nth-child(2){
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+      gap: 15px;
+      padding-inline: 10px;
+   }
+   
+   .homepage .informasi .row:nth-child(2) .col{
+      background-color: #ffffff;
+      padding: 0;
+    }
+
+  .homepage .informasi .row:nth-child(2) img{
+    width: 100%;
+    height: 300px;
+  }
+
+  /* Footer Style */
+
+  .footer {
+    width: 100%;
+    min-height: 40vh;
+  }
+.footer .row:nth-child(1) .col:nth-child(1) h3 {
+    color: var(--color-text);
+}
+.footer .row:nth-child(1) .col:nth-child(1) .decs {
+    color: var(--color-text);
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .no a,
+.footer .mail a,
+.footer .insta a,
+.footer .alamat{
+    display: flex;
+    align-items: center;
+    color: black;
+    column-gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 1px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) {
+    gap: 10px;
+}
+
+.footer .row:nth-child(1) .col:nth-child(2) a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Informasi Style */
+
+.informasi-page .informasi{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.informasi-page .informasi .row:nth-child(1){
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.informasi-page .informasi .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.informasi-page .informasi .row:nth-child(3){
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 15px;
+    padding-inline: 10px;
+ }
+ 
+ .informasi-page .informasi .row:nth-child(3) .col{
+    background-color: #ffffff;
+    padding: 0;
+  }
+
+.informasi-page .informasi .row:nth-child(3) img{
+  width: 100%;
+  height: 300px;
+}
+
+.informasi-page .informasi .icon{
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  color: gray;
+  column-gap: 5px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.detail-page {
+  background-color: var(--primary-color);
+  padding-bottom: 100px;
+}
+
+.detail-page .row:nth-child(1){
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+.detail-page .row:nth-child(1) h1{
+  color: var(--color-text);
+}
+
+.detail-page .icon{
+font-size: 16px;
+display: flex;
+align-items: center;
+color: gray;
+column-gap: 5px;
+margin-top: 10px;
+margin-bottom: 5px;
+}
+.detail-page .card-img {
+  height: 600px; /* Atur tinggi gambar sesuai kebutuhan */
+  object-fit: cover; /* Agar gambar tidak terdistorsi */
+}
+
+
+/* Tentang Style */
+.panduan{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.panduan .row:nth-child(1){
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* Alumni Style */
+ .cari-alumni{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.cari-alumni .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.cari-alumni .row:nth-child(1){
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+
+ .alumni{
+    background-color: var(--primary-color);
+    padding-bottom: 100px;
+}
+
+.alumni .row:nth-child(1) h1{
+    color: var(--color-text);
+}
+
+.alumni .ptop{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+
